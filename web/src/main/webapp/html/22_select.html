@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>select 태그</h1>
+	<hr>
+	<!--
+	select 태그 : 목록에서 1개 또는 1개 이상을 선택하여 전달
+	=> 하위태그 : option , optgroup
+	multiple 속성 : 다수의 값을 선택가능! (컨트롤로 여러개선택)
+	
+	 -->
+	 <form action="#" method="post">
+	 	<label for ="class"> 학과</label>
+	 	<select id ="class" name="class" multiple="multiple">
+	 	
+	 	<!--  option tag : 선택목록 출력
+	 		selected  속성 : 우선 선택 설정 - 속성값 생략가능
+	 	 -->
+	 	<option value="arch">건축공학과</option>
+	 	<option value="machinic">기계공학과</option>
+	 	<option value="indust">산업공학과</option>
+	 	<option value="computer">컴퓨터공학과</option>
+	 	<option value="chemical">화학공학과</option>
+	 	</select>
+		<button type="submit">입력완료</button>
+		
+	 </form>
+
+
+</body>
+</html>

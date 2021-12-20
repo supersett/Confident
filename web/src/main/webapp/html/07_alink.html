@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html</title>
+</head>
+<body>
+	<h1>a 태그</h1>
+	<hr>
+	<!-- a 태그 : 클릭 이벤트에 대한 이동 관련 이벤트 핸들러 제공 -->
+	<!-- => href 속성을 이용하여 하이퍼 링크(Hyper Link) 기능을 제공  --> 
+	<!-- href 속성 : 요청 웹문서(웹프로그램)의 URL 주소를 속성값으로 설정 -->
+	<!-- => a 태그의 박스모델에서 클릭 이벤트가 발생될 경우 href 속성값으로 설정된 URL 주소의
+	 웹문서(웹프로그램)을 요청하여 새로운 응답결과를 받아와 출력 - 페이지 이동 -->
+	 <!-- => 브라우저의 주소창이 href 속성값으로 설정된 URL 주소로 변경 -->
+	<a href="https://www.daum.net">다음</a>&nbsp;&nbsp;&nbsp;
+	<a href="https://www.naver.com">네이버</a>&nbsp;&nbsp;&nbsp;
+	<a href="https://www.google.com">구글</a>&nbsp;&nbsp;&nbsp;
+	<hr>
+	<!-- target 속성 : 웹문서(웹프로그램)을 요청하여 출력될 브라우저를 속성값으로 설정 -->
+	<!-- => 속성값 : _self(현재 브러우저 - 기본), _blank(새로운 브러우저), _top(최상위 브러우저)
+	, _parent(부모 브러우저), _child(자식 브러우저), iframe 태그(가상의 브러우저)의 name 속성값 -->
+	<a href="/web/html/07_kor.html" target="_blank"><img src="/web/html/images/kor.png"></a>
+	<a href="07_eng.html" target="_blank"><img src="images/eng.png"></a>
+
+
+</body>
+</html>

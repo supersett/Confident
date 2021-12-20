@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>form 태그</h1>
+	<hr>
+	<!-- form 태그 : 사용자로부터 값을 입력받아 웹프로그램을 요청하여 입력값을 전달 -->
+	<!--  => 하위태그로 입력태그와 요청 이벤트(submit event)를 제공하는 태그를 반드시 작성해야함.-->
+	<!--  -->
+	<!-- action 속성 : 요청웹프로그램(servlet 또는 jsp) 의 url 주소를 속성값으로 설정
+		=> action 속성을 생략하는 경우 현재 브라우저 주소창에 url 주소로
+		표현된 웹프로그램 재요청
+		
+		method 속성 : get(기본) 또는 post중 하나를 속성값으로 설정
+		1. get방식 : 입력값을 url주소에 queryString 으로 전달한다-소용량의 보안이 필요없는값
+		2.post방식 : 입력값을 리퀘스트 메세지의 바디(body)에 저장하여 전달
+		 - 대용량 또는 보안이 필요한 값
+		
+		enctype 속성: 입력값을 전달하는 방식을 속성값으로 설정
+		[application/x-www-form-unlencoded] 속성값(기본): 입력값을 인코딩처리된 문자데이터(2byte)로전달
+		[multipart/form-data] 속성값 : 입력값을 원시데이터(1byte)로 전달 - 파일을 입력받아 전달
+		
+		name 속성 : 태그의 이름을 속성값으로 설정 - javaScript에서 속성값을 객체로 표현할수있다.
+		
+		
+	 -->
+	
+	<form action="19_action.html" method="post" name ="loginForm"></form>	
+		<!-- 입력태그 : input, select, textarea 태그 -반드시 1개이상 있어야함-->
+		아이디 : <input type="text" name ="id"><br>
+		비밀번호 : <input type="password" name = "passwd"><br>
+		
+		<!-- 요청 이벤트(summit event)를 제공하는 태그 : input태그,button 태그 -1개만 있으면됨-->
+		<!-- botton 태그의 type 속성값을 [summit]으로 설정하면 버튼을
+			클릭한경우 summit Event가 발생한다 
+			=>요청이벤트가 발생된경우 form태그가 동작되어 설정된 url주소의
+			웹프로그램을 요청하여 입력값을 전달한다
+			=>브라우저 주소창의 url주소는 요청 웹프로그램의 url주소로 변경된다.
+			-->
+		<button type ="submit">로그인</button>		
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

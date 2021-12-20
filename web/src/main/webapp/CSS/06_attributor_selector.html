@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+div {
+	font-size:20px;
+	line-height :35px;
+}
+a{
+	color:red;
+	text-decoration:none;
+}
+/* 속성 선택자 : 태그 속성이나 속성값을 이요하여 엘리먼트 선택*/
+/* 형식) 선택자[속성] : 태그 속성이 존재하는 엘리먼트 선택*/
+a[href]{color:green;}
+
+/* 형식) 선택자[속성="비교값"] : 태그 속성값이 비교값과 같은 엘리먼트 선택*/
+a[href="#abc"]{color : blue;}
+
+/* 형식) 선택자[속성*="비교값"] : 태그 속성값에 비교값이 문자로 포함된 엘리먼트 선택*/
+div[title*="여성"]{color : gold;}
+
+/* 형식) 선택자[속성~="비교값"] : 태그 속성값에 비교값이 단어로 포함된 엘리먼트 선택*/
+div[title~="여성"]{color : lime;}
+
+/* 형식) 선택자[속성^="비교값"] : 태그 속성값에 비교값으로 시작되는 엘리먼트 선택*/
+div[title^="남성"]{color : blue;}
+
+/* 형식) 선택자[속성$="비교값"] : 태그 속성값에 비교값으로 끝나는 엘리먼트 선택*/
+div[title$="남성"]{color : olive;}
+
+
+</style>
+</head>
+<body>
+	<h1>속성 선택자</h1>
+	<hr>
+	
+	<div><a>하이퍼링크 기능을 제공하는 태그-1</a></div>
+	<div><a href="#">하이퍼링크 기능을 제공하는 태그-2</a></div>
+	<div><a href="#abc">하이퍼링크 기능을 제공하는 태그-3</a></div>
+	<hr>
+	<div title="여성">화장품-1</div>
+	<div title="화장품">화장품-2</div>
+	<div title="여성화장품">화장품-3</div>
+	<div title="여성 화장품">화장품-4</div>
+	<div title="남성화장품">화장품-5</div>
+	<div title="화장품남성">화장품-6</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
