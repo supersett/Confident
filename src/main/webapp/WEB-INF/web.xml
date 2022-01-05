@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="Http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>ServletPractice</display-name>
+	<!-- web.xml : WAS가 프로젝트를 웹자원(WebContext)으로 변환하기 위한 정보를 제공하는 환경설정파일 -->
+
+
+	<!-- servlet : 서블릿 클래스를 서블릿으로 등록하기 위한 부모 엘리먼트 -->
+	<servlet>
+		<!-- servlet-name : 서블릿의 이름(식별자)을 설정하는 엘리먼트 -->
+		<servlet-name>hello</servlet-name>
+		<!-- servlet-class : 서블릿으로 등록될 서블릿클래스를 설정하는 엘리먼트 -->
+		<servlet-class>xyz.itwill.servlet.HelloServlet</servlet-class>
+
+	</servlet>
+
+	<!-- servlet-mapping : 서블릿으로 실행되도록 클라이언트가 요청하는 url주소의 패턴을 등록하기위한 부모엘리먼트 -->
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<!-- url-pattern : 서블릿을 요청하기 위한 url 주소의 패턴(식별자)을 설정하는 엘리먼트 -->
+		<url-pattern>/hello.itwill</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
