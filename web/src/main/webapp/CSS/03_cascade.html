@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+부모 엘리먼트에 적용된 스타일은 자식엘리먼트에 상속되어 적용
+=>상속되지 않는 스타일 속성 존재
+
+스타일은 css 선언순서 , 단계적으로 적용된다
+*/
+body{
+color :red;
+}
+
+/* !important : 단계적 적용을 무시하고 최우선적으로 적용될 스타일에 대한 속성값*/
+li{
+color : aqua !important;
+}
+
+/* html 태그의 계층순서에 의해 스타일적용- 자식엘리먼트가 나중에적용*/
+ul{
+color : blue;
+}
+ul{
+color : lime;
+}
+
+</style>
+</head>
+<body>
+	<h1>CSS 스타일의 단계적 적용과 상속</h1>
+	<hr>
+	<p>브라우저에 출력될 아주 중요한 내용</p>
+	<ul>
+		<li>정말로 중요한 내용-1</li>
+		<li>정말로 중요한 내용-2</li>
+		<li>정말로 중요한 내용-3</li>
+	</ul>
+
+
+
+</body>
+</html>

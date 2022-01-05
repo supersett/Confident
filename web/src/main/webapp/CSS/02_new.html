@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- style 태그 : 웹문서에 스타일 설정 -->
+<!-- => type 속성값으로 [text/css]를 설정하여 CSS 스타일 적용 -->
+<style type="text/css">
+/* CSS 주석문 */
+/*
+Selector[, Selector,..][:paduo-class]{
+	Property : Value [Value ...];
+	Property : Value [Value ...];
+	...
+}
+
+*/
+/* 선택자(selector) : 엘리먼트(태그 - 박스모델)을 선택하기 위한 표현방법 */
+h1{
+text-align:center;
+}
+
+p{
+	font-size :40px;
+	color : red;
+}
+p:nth-child(2n){
+	color: blue;
+}
+
+</style>
+</head>
+<body>
+	<h1>CSS Style</h1>
+	<hr>
+		<p>브라우저에 출력될 내용임</p>
+		<p>브라우저에 출력될 내용임</p>
+
+</body>
+</html>

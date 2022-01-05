@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>datalist 태그</h1>
+	<hr>
+	<!--  
+	datalist 태그 : input 테그에 입력값을 제공한다 - 하위태그 :option
+	
+	 -->
+	<form action="#" method="post">
+		<label for ="subject">좋아하는 과목</label>
+		<input type = "text" name="subject" id="subject" list="subjectList">
+		
+		<datalist id="subjectList">
+			<option>java</option>
+			<option>jsp</option>
+			<option>oracle</option>
+		</datalist>
+		<button type ="submit">입력완료</button>
+		
+	</form>
+
+</body>
+</html>

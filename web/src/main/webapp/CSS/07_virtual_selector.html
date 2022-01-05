@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS</title>
+
+<style type="text/css">
+
+div {
+	font-size:20px;
+	line-height :35px;
+}
+a{
+	color:green;
+	text-decoration:none;
+}
+/* 가상 선택자 : 선택 엘리먼트의 상태에 의해 CSS 스타일 적용*/
+/* 형식) 선택자:상태 >> 선택 엘리먼트에 따라 사용가능한 상태 존재*/
+/* :link : 하이퍼링크의 url 주소를 한번도 요청하지 않은상태 */
+a:link{color:black;}
+
+/* :visited : 하이퍼링크의 url 주소를 한번이상 요청하여 응답받은 상태*/
+a:visited{color:olive;}
+
+/* :active : 선택 엘리먼트를 마우스 커서로 선택하여 누르고 있는 상태*/
+a:active{color:blue;}
+
+/* :hover : 선택 엘리먼트에 마우스 커서 위치하고 있는 상태*/
+a:hover{color:pink;}
+
+
+</style>
+</head>
+<body>
+	<h1>가상 선택자</h1>
+	<hr>
+	
+	<div>
+		<a href="https://www.daum.net">다음</a>&nbsp;&nbsp;&nbsp;
+		<a href="https://www.naver.com">네이버</a>&nbsp;&nbsp;&nbsp;
+		<a href="https://www.google.com">구글</a>&nbsp;&nbsp;&nbsp;
+	</div>
+
+
+</body>
+</html>

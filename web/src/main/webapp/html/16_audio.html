@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML</title>
+</head>
+<body>
+	<h1>audio 태그</h1>
+	<hr>
+	<!-- embed 태그 : 인터넷의 멀티미디어 파일을 재생하기 위한 태그 - 플래시 등 -->
+	<!-- object 태그 : 인터넷의 멀티미디어 파일을 재생하기 위한 태그 - 오디오 파일, 비디오 파일 등 -->
+	
+	<!-- audio 태그 : 인터넷의 오디오 파일(mp3 파일,ogg 파일 등)을 재생하기 위한 태그 -->
+	<!-- src 속성 : 오디오 파일의 URL 주소를 속성값으로 설정 -->
+	<!-- autoplay 속성 : 자동 재생 - 속성값 생략 가능 : Webkit 방식으로 브라우저에서는 미적용 -->
+	<!-- controls 속성 : 제어판 재생 - 속성값 생략 가능 -->
+	<!-- loop 속성 : 반복 재생 - 속성값 생략 가능 -->
+	<!-- preload 속성 : none, metadata, auto(기본) 중 하나를 속성값으로 설정 -->
+	<!-- <audio src="audio/horse.mp3" autoplay="autoplay" controls="controls" loop="loop" preload="auto"></audio> -->
+	<!-- <audio src="audio/horse.ogg" autoplay="autoplay" controls="controls" loop="loop" preload="auto"></audio> -->
+	
+	<audio controls="controls">
+		<!-- source 태그 : 다양한 형식의 오디오 파일을 제공 -->
+		<source src="audio/horse.mp3">
+		<source src="audio/horse.ogg">
+	</audio>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

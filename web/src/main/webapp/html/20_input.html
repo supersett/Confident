@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>input 태그</h1>
+	<hr>
+	<!--  input 태그 : 사용자로부터 값을 입력받기위한 입력태그
+		
+		type 속성 : 입력값의 형식관련 속성값 
+		name 속성 : 태그의 이름을 속성값으로 설정 - javaScript에서 객체로 표현		
+			=>웹프로그램에서 전달값에 대한 식별자로 사용된다!!(중요해)		
+		value 속성 : 입력태그의 초기값을 속성값으로 설정
+		maxlength 속성 : 입력태그의 입력 가능한 최대문자갯수를 속성값으로 설정
+		autofocus 속성(html5) : 입력태그의 입력촛점(포커스)를 위치하도록 설정
+		required 속성 : 필수 입력값 설정 - 속성값 생략가능
+			=> required 속성이 설정된 입력값이 따로 없는경우 웹프로그램 요청 불가능
+		placeholder : 입력값에 대한 설명을 속성값을 설정
+		checked : 우선선택을 설정(radio, checkbox)
+		file : 파일을 입력받아 전달한다.
+		
+		
+		
+		<type 속성값>
+		hidden : 사용자에게 값을 입력받지 않고 원하는 값을 전달
+		text : 사용자에게 문자열을 입력받아 전달
+		password : 사용자에게 문자열을 입력받아 전달 -보안을 요하는 문자 입력받을떄
+		tell : 전화번호를 입력받아 전달 = 스마트기기의 입력패드 변경
+		url : url 주소를 입력받아 전달 = 스마트 기기의 입력패드 변경
+		
+		
+		 -->
+	<form action="#" method="post" name ="form">
+		<input type ="hidden" name="num" value="1000">
+		<p>아이디 : <input type ="text" name="id" size="10" maxlength="20" 
+						autofocus="autofocus" required = "required"></p>
+		
+		<p>비밀번호 : <input type ="password" name ="passwd" 
+			placehoder = "비밀번호를 입력해주세요"> </p>
+			
+		<p>이름 : <input type ="text" value="홍길동" readonly="readonly"></p>
+		<p>성별 : <input type ="radio" name ="gender" value="M" checked="checked">남자&nbsp;&nbsp;
+				  <input type ="radio" name ="gender" value="W" >여자&nbsp;</p>
+		
+		<p>취미 : <input type="checkbox" name="hobby" value="등산">등산&nbsp;&nbsp;  </p>
+				<input type="checkbox" name="hobby" value="낚시">낚시&nbsp;&nbsp;  </p>
+				<input type="checkbox" name="hobby" value="게임">게임&nbsp;&nbsp;  </p>
+				<input type="checkbox" name="hobby" value="독서">독서&nbsp;&nbsp;  </p>
+		
+		<p>사진 : <input type="file" name ="file"></p>
+		<p>전화번호 : <input type ="tell" name="phone"]></p>
+		<p>
+		<!-- 
+		form 태그에서 입력태그외 요청이벤트(summit event)를 제공하는 태그가 반드시 존재
+		input 태그의 type 속성값을 submit 으로 설정 -버튼을 누르면 요청이벤트 발생
+		button 태그의 type 속성값을 submit 으로 설정 -버튼을 누르면 요청이벤트 발생
+		img 태그의 name 속성값을 submit 설정 - 이미지 클릭하면 요청이벤트 발생
+		
+		<많이쓰는것!> JavaScript를 이용하여 박스모델을 클릭하면 요청이벤트 발생
+		<input type ="submit" value ="회원가입">
+		
+
+		 -->
+		<input type ="submit" value="회원가입">
+		<button type = "submit">회원가입</button>		
+		
+		
+		
+	</form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
