@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 올린이와 파일을 입력받아 처리페이지(view.itwill)를 요청하여 전달하는 웹문서 -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Servlet</title>
+<link rel="stylesheet" href="css/common.css" type="text/css"/>
+</head>
+<body>
+<h1>파일 업로드-1</h1>
+<hr/>
+입력 데이타 및 입력 파일을 웹브라우저에 출력<br/>
+<hr/>
+<!-- 사용자로부터 파일을 입력받아 웹프로그램을 요청하여 전달하기 위해서는 반드시 method 
+ 속성값을 [POST]로 설정하고 enctype 속성값을 [multipart/form-data]로 설정 -->
+<!-- enctype 속성 : [application/x-www-form-urlencoded] 또는 [multipart/form-data] 중 하나를 속성값으로 설정 -->
+<!-- => [application/x-www-form-urlencoded] : 입력값을 인코딩 처리된 문자값으로 전달(기본) - 파일 전달 불가능 -->
+<!-- => [multipart/form-data] : 모든 입력값을 원시데이타(멀티파트 폼데이타)로 전달 - 파일 전달 가능 -->
+<form action="view.itwill" method="post" enctype="multipart/form-data">
+<table border="0" cellpadding="0" cellspacing="0" width="500" align="center">
+<tr>
+	<td valign="top" bgcolor="#000000" align="center">
+		<table border="0" cellpadding="1" cellspacing="1" width="500">
+			<tr bgcolor="#556b2f" class="menu">
+				<td align="center" colspan="2">
+					멀티파트/파일업로드(업로드 데이터 보기)
+				</td>
+			</tr>
+			<tr bgcolor="#f4f4f4">
+				<td width="100" align="center" class="t1">
+					올린이
+				</td>
+				<td width="400" align="left">
+					&nbsp;<input type="text" name="name" 
+						size="10" maxlength="10" class="TXTFLD">
+				</td>
+			</tr>
+			<tr bgcolor="#f4f4f4">
+				<td width="100" align="center" class="t1">
+					파일선택
+				</td>
+				<td width="400" align="left">
+					&nbsp;<input type="file" name="fileone" 
+						size="40" class="TXTFLD">
+				</td>
+			</tr>
+			<tr bgcolor="#f4f4f4">
+				<td align="center" colspan="2">
+					<input type="submit" value="올라가라..">
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
